@@ -24,6 +24,7 @@ class Simple{
       Simple(){   
     	  show(1);
 		}
+      
       	
       Simple(int b){
     	  this.a=b;
