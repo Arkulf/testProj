@@ -5,7 +5,9 @@ public class Start {
 		System.out.println("Hello");
         System.out.println(show1());
         Simple s1 = new Simple();
+        Simple s2 = new Simple(3);
         System.out.println(s1.a+ " " +s1.f);
+        System.out.println(s2.a+ " " +s2.f);
        
 	}
 
@@ -18,13 +20,19 @@ public class Start {
 class Simple{  
 	 int a=10;  
 	 float f=a;
-      Simple(){       
+	 int showConst;
+      Simple(){   
+    	  show(1);
 		}
+      	
       Simple(int b){
     	  this.a=b;
+    	  show(2);
 		}  
 	     
-		
+		static void show(int g){
+			System.out.println("call from class "+ g );
+		}
 	
 	}  
 
