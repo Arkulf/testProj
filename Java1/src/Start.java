@@ -20,7 +20,9 @@ class Simple{
 	 float f=a;
       Simple(){       
 		}
-	    
+      Simple(int b){
+    	  this.a=b;
+		}  
 	     
 		
 	
