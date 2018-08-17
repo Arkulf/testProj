@@ -1,6 +1,8 @@
 
 public class Start {
 
+	
+	
 	public static void main(String[] args) {
 		System.out.println("Hello");
         System.out.println(show1());
@@ -22,18 +24,21 @@ class Simple{
 	 int a=10;  
 	 float f=a;
 	 int showConst;
+	 static int instCnt =0;
       Simple(){   
     	  show(1);
+    	  instCnt++
 		}
       
       	
       Simple(int b){
     	  this.a=b;
     	  show(2);
+    	  instCnt++;
 		}  
 	     
 		static void show(int g){
-			System.out.println("call from class "+ g );
+			System.out.println("call from class "+ g + " No of inst= " + instCnt);
 		}
 	
 	}  
