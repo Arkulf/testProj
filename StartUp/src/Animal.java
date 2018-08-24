@@ -1,44 +1,26 @@
 
 public class Animal {
-	String typ, namn;
-	int vikt;
+	String name, gender,type;
+	int weight;
 
-	Animal(String typ, String namn, int vikt) {
-		this.typ = typ;
-		this.namn = namn;
-		this.vikt = vikt;
-
-		System.out.println("A " + typ + " called " + namn + " is created its weight is " + vikt + "kg");
+	Animal(String name, String gender, int weight) {
+		this.gender=gender;
+		this.name = name;
+		this.weight = weight;
 
 	}
 
-	public String getTyp() {
-		return typ;
-	}
-
-	public void setTyp(String typ) {
-		this.typ = typ;
-	}
-
-	public String getNamn() {
-		return namn;
-	}
-
-	public void setNamn(String namn) {
-		this.namn = namn;
-	}
-
-	public int getVikt() {
-		return vikt;
-	}
-
-	public void setVikt(int vikt) {
-		this.vikt = vikt;
-	}
 	
+	public Animal(String name, String type, String gender, int weight) {
+		this.gender=gender;
+		this.name = name;
+		this.weight = weight;
+		this.type = type;
+	}
+
+
 	public String toString() {
-        return "Namn: " + this.namn + ",, "
-                + "Typ: " + this.typ + ",, " +  "vikt: " + this.vikt;
-    }
+		return "A " + type + " Namn: " + this.name + " Gender: " + this.gender + " vikt: " + this.weight+"g";
+	}
 
 }
